@@ -69,3 +69,18 @@ nav {
 .nav__toggle {
   display: none;
 }
+
+/* Menu de Navigation sur mobile */
+@media screen and (max-width: 718px) {
+  .nav__logo {
+    font-size: 1.25rem;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: initial;
+  }
+}
