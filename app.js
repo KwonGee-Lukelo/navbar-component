@@ -8,11 +8,12 @@ btnClose.addEventListener("click", closeMenu);
 function toggleMenu() {
   document.querySelector(".nav__list").classList.add("visible");
   document.querySelector(".nav__close").classList.add("close");
-  document.querySelector(".nav__list").classList.remove("nav__list");
+  //   document.querySelector(".nav__list").classList.remove("nav__list");
 }
 
 //Fermer le menu deroulant
 function closeMenu() {
+  document.querySelector(".nav__list").classList.add("nav__list");
   document.querySelector(".nav__list").classList.remove("visible");
-  console.log("reussi");
+  document.querySelector(".nav__close").classList.remove("close");
 }
